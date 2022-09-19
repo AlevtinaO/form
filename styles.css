@@ -9,8 +9,7 @@ html {
 }
 * {
     box-sizing: border-box;
-}
-
+ } 
 .background {
     background-color:#f5f5f5;
     padding-top: 100px;
@@ -27,21 +26,14 @@ html {
     margin: auto;
 }
 .image-conteiner {
-    height: 900px;
-    width: 800px;
-    position: relative;
     overflow: hidden;
-    margin-right: 40px;
+    margin-right: 40px;  
 }
 .image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width:auto;
     height:100%;
-    border-radius: 30px;  
+    border-radius: 30px; 
+    object-fit: contain;
+    object-position: center; 
 }
 .title {
     font-size: 24px;
@@ -114,7 +106,6 @@ html {
     border-radius: 8px;
     background-color: white;
     border: 1px solid var(--light-gray-color);
-    cursor: pointer;
 }
 .input-country:focus {
     outline: 1px solid var(--light-gray-color);
@@ -135,25 +126,40 @@ html {
 .checkbox {
     color: var(--gray-color);
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 .border {
     border-bottom: 1px solid var(--light-gray-color);
     padding-bottom: 30px;
     margin-right: 50px;
 }
-
+.new-checkbox {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--gray-color);
+    border-radius: 5px;
+    cursor: pointer;  
+}
+.new-checkbox:checked {
+    border: 1px solid var(--blue-color);
+    background-color: var(--blue-color);
+    background-image: url("form-images/check_icon.png");
+    background-position: center;
+    background-size: contain;
+}
 .button {
     cursor: pointer;
     font-weight: 300;
     color: white;
     background-color: var(--blue-color);
-    width: 510px;
+    width: 514px;
     height: 40px;
     border: none;
     border-radius: 8px;
 }
 .button:hover {
     background-color: #025a86;
-    transition-property: all;
-    transition-timing-function: linear;
+    transition: all linear 0.5s;
 }
