@@ -39,6 +39,53 @@
                              </div>
                          </div>
                  </div>
+                 <!--Address-->
+                 <div>
+                     <h2 class="address-title">Адрес доставки</h2>
+                         <div class="country-address">
+                             <div class="country">
+                                 <div class="label-country margin"><label for="country">Страна</label></div>
+                                 <select name="country" class="input-country margin">
+                                    <option value="Ru">Россия</option>
+                                    <option value="Bl">Беларусь</option>
+                                    <option value="Kz">Казахстан</option>
+                                 </select>
+                             </div>
+                             <div class="country">
+                                <div class="label-country"><label for="city">Город</label></div>
+                                <input class="input-country" id="city" type="text" name="country"/>
+                             </div>
+                             <div class="country">
+                                <div class="label-country"><label for="index">Почтовый индекс</label></div>
+                                <input class="input-country" id="index" type="text" name="country"/>
+                             </div>
+                             <div class="country">
+                                 <div class="label-country margin"><label for="city">Адрес доставки (улица, дом, квартира)</label></div>
+                                 <input class="input-country address margin" id="city" type="text" name="country"/>
+                             </div>    
+                        </div>
+                 </div>
+                 <!--notice-->
+                 <div>
+                    <h2 class="address-title margin-b">Уведомлять об акциях и скидках</h2>
+                    <p class="notice-text">Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p>
+                 </div>
+                 <div>
+                     <div class="checkbox">
+                         <input type="checkbox" id="mail" name="mail" value="mail">
+                         <label for="mail">По Email</label>
+                     </div>
+                     <div class="checkbox">
+                         <input type="checkbox" id="sms" name="sms" value="sms">
+                         <label for="sms">По SMS</label>
+                     </div>
+                     <div class="checkbox border">
+                         <input type="checkbox" id="push" name="push" value="push">
+                         <label for="push">Push-уведомления в приложении</label>
+                     </div>
+                 </div>
+                 <!--button-->
+                 <div ><button class="button" type="submit">Создать аккаунт</button></div>
              </form>
          </div>
      </main> 
